@@ -1,5 +1,6 @@
 const wrapper= document.querySelector('.wrapper');
 const question= document.querySelector('.question');
+const buttons= document.querySelector('.buttons');
 const photo_container= document.querySelector('.photo_container');
 const yesBtn = document.querySelector('.yes-btn');
 const noBtn= document.querySelector('.no-btn');
@@ -9,6 +10,7 @@ const noBtnRect = noBtn.getBoundingClientRect();
 
 yesBtn.addEventListener('click', () => {
     question.innerHTML = 'I miss you tooooo!!';
+    buttons.innerHTML = '';
     const img = document.createElement('img');
     img.src = 'papà.jpg';
     photo_container.innerHTML = ''; // Clear previous content of photo_container
